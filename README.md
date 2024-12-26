@@ -7,9 +7,8 @@ The EDA was done on interactions with confidence score >= 700. For two key reaso
 1) The number of nodes to fit on screen apply force directed layout algorithms becomes large. My Gephi application started to crash while I was attempting to run the force directed layout algorithms.
 2) We want to only gain a high level understanding of patterns in the interactions. We can omit the minute details(only while performing EDA).
 
-As the first step of EDA, pagerank algorithm was run on the graph constructed out of confident(>= 700) interactions. The nodes(proteins) were sized according to their degree and color-graded with their pagerank score.<br>
-Among the confident interactions, further proteins were filtered out which had in-degree less than 20(i.e those proteins that are involved in less than 20 interactions).<br>
-Now, the force directed layout algorithms are applied to give structure to the interactions network.
+As the first step of EDA, pagerank algorithm was run on the graph constructed out of confident(>= 700) interactions. The nodes(proteins) were sized according to their degree and color-graded with their pagerank score. Among the confident interactions, further proteins were filtered out which had in-degree less than 20(i.e those proteins that are involved in less than 20 interactions).<br>
+Now, the force directed layout algorithms are applied to give structure to the interactions network.<br><br>
 
 #### Force directed layout algorithms config:
 |***Fruchterman Reingold***|***Force Atlas 2***|
@@ -19,8 +18,8 @@ Now, the force directed layout algorithms are applied to give structure to the i
 |**Speed** : 10.0|**Prevent overlap** : True|
 |          |**Dissuade Hubs** : True|
 
-The dissuade hubs parameter helped in identifying key proteins that bridge the clusters. Also, some of these 'cluster bridging' proteins have a high pagerank score. <br>
-proteins like YLR167W, YKR094C and YIL148W are among the cluster bridging proteins which have a high pagerank score.
+The dissuade hubs parameter helped in identifying key proteins that bridge the clusters. Also, some of these ***'cluster bridging'*** proteins have a high pagerank score. <br>
+proteins like YLR167W, YKR094C and YIL148W are among the cluster bridging proteins which have a high pagerank score.<br><br>
 
 1) YLR167W (Mcm2-7 Complex Member): This protein is essential for DNA replication, which is fundamental to cell division and growth. Without the Mcm2-7 complex, cells cannot replicate their DNA properly, leading to issues in cell proliferation.
 2) YKR094C (Orc1-6 Complex Member): Similarly, this protein is vital for initiating DNA replication. The Origin Recognition Complex (ORC) is necessary to start the replication process, and without it, cells would fail to duplicate their DNA accurately, which could lead to cell death or malfunction.
