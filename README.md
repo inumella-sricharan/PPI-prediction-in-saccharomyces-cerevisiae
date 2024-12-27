@@ -6,11 +6,11 @@
 The EDA was done on interactions with confidence score >= 700. For 3 key reasons:<br>
 1) The interactions with low confidence scores (<= 300) can be assumed to not occur in the organism(in this case, saccharomyces-cerevisiae).
 2) The interactions with confidence scores( around 500) do not hit the threshold to fully confirm they occur in the organism or not.
-3) We want to only gain a high level understanding of patterns in the interactions. That is available with interactions having a high confidence scores.
+3) We want to only gain a high level understanding of patterns in the interactions. That is available with interactions having a high confidence scores.<br>
 
-As the first step of EDA, pagerank algorithm was run on the graph constructed out of confident(>= 700) interactions. The nodes(proteins) were sized according to their degree and color-graded with their pagerank score. Among the confident interactions, further proteins were filtered out which had in-degree less than 20(i.e those proteins that are involved in less than 20 interactions).<br><br>
+As the first step of EDA, pagerank algorithm was run on the graph constructed out of confident(>= 700) interactions. The nodes(proteins) were sized according to their degree and color-graded with their pagerank score. Among the confident interactions, further proteins were filtered out which had in-degree less than 20(i.e those proteins that are involved in less than 20 interactions).<br>
 
-(That is because the number of nodes to fit on screen to apply force directed layout algorithms becomes large. My Gephi application started to crash while I was attempting to run the force directed layout algorithms.) <br><br>
+(That is because the number of nodes to fit on screen to apply force directed layout algorithms becomes large. My Gephi application started to crash while I was attempting to run the force directed layout algorithms.) <br>
 
 Now, the force directed layout algorithms are applied to give structure to the interactions network.<br><br>
 
