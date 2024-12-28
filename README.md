@@ -40,6 +40,10 @@ Some of the other proteins that got a high pagerank score are ***YNL030W, YBR009
 
 Briefly write about working of the graph convolutional network here(about two main parts, message passing followed by transformation).<br>
 
+$$
+H^{(l+1)} = \sigma\left(\tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} H^{(l)} W^{(l)}\right)
+$$
+
 With GCN, our main task is to predict wether an interaction occurs between a pair of proteins or not. Formally, this is an edge prediction task with GCN, i.e to predict wether an edge exists between a pair of nodes in the graph or not.<br>
 
 Since GCNs mainly work with embeddings of nodes, I have chosen to form embeddings by processing the descriptions of the proteins that are part of the physical network of this organism in the Strings database(mention about the strings database and the file names). With the help of the sentence transformer model (mention the model name here), I generated the embeddings.<br>
