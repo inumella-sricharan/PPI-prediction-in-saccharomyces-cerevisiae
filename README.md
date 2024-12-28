@@ -46,14 +46,11 @@ The additional aspect is the accumulation of neighbouring feature vectors of a n
 Both these steps can be acheived by using adjacency matrix at every layer.(Because through it, we can pin-point the neighbours of every node).<br>
 Below is the equation for a single layer in GCN<br>
 
-$$
-\begin{aligned}
-H^{(l+1)} = \tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} H^{(l)} W^{(l)} \\
-\text{Here, } H^{(l)} \text{   is the feature matrix of layer l} \\
-\text{And,   } \tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} \text{   is the normalized adjacency matrix(for balancing the mix of feature vectors from the neighbours)} \\
-\text{And,   } \tilde{A} \text{is the adjacency matrix A with self-loops included} \\
-\end{aligned}
-$$
+
+$H^{(l+1)} = \tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} H^{(l)} W^{(l)}$
+$\text{Here, } H^{(l)} \text{   is the feature matrix of layer l}$
+$\text{And,   } \tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} \text{   is the normalized adjacency matrix(for balancing the mix of feature vectors from the neighbours)}$
+$\text{And,   } \tilde{A} \text{is the adjacency matrix A with self-loops included}$
 
 With GCN, our main task is to predict wether an interaction occurs between a pair of proteins or not. Formally, this is an edge prediction task with GCN, i.e to predict wether an edge exists between a pair of nodes in the graph or not.<br>
 
