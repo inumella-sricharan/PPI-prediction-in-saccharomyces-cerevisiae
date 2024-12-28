@@ -43,14 +43,14 @@ The additional aspect is the accumulation of neighbouring feature vectors of a n
  1) Aggregation (How to combine the feature vectors of a node's neighbours)
  2) Combination (How to combine the aggregated result with the node's feature vector).<br>
 
-Both these steps can be acheived by using adjacency matrix at every layer.(Because through it, we can pin-point the neighbours of every node).<br>
+Both these steps can be acheived by using adjacency matrix at every layer.(Because through it, we can pin-point the neighbours of every node).<br><br>
 Below is the equation for a single layer in GCN<br>
 
 
-$H^{(l+1)} = \tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} H^{(l)} W^{(l)}$
-$\text{Here, } H^{(l)} \text{   is the feature matrix of layer l}$
-$\text{And,   } \tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} \text{   is the normalized adjacency matrix(for balancing the mix of feature vectors from the neighbours)}$
-$\text{And,   } \tilde{A} \text{is the adjacency matrix A with self-loops included}$
+$H^{(l+1)} = \tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} H^{(l)} W^{(l)}$<br><br>
+$\text{Here, } H^{(l)} \text{   is the feature matrix of layer l}$<br>
+$\text{And,   } \tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} \text{   is the normalized adjacency matrix(for balancing the mix of feature vectors from the neighbours)}$<br
+$\text{And,   } \tilde{A} \text{is the adjacency matrix A with self-loops included}$<br>
 
 With GCN, our main task is to predict wether an interaction occurs between a pair of proteins or not. Formally, this is an edge prediction task with GCN, i.e to predict wether an edge exists between a pair of nodes in the graph or not.<br>
 
