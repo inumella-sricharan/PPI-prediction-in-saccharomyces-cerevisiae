@@ -2,7 +2,7 @@
  Analysis of protein interactions. Figuring out important proteins according to the graph structure.  Link prediction with graph convolutional networks.
 
 ### <ins>Intro:</ins> <br>
-This is project is about predicting physical protein interactions of the Baker's yeast organism(saccharomyces cerevisiae). 
+This is project is about predicting physical protein interactions of the baker's yeast organism(saccharomyces cerevisiae). 
 
 ### <ins>EDA:</ins> <br>
 The EDA was done on interactions with confidence score >= 700. For 3 key reasons:<br>
