@@ -59,7 +59,7 @@ $\text{And,   } \tilde{D} \text{is the degree matrix. Only the diagonal entries 
 
 With GCN, our main task is to predict wether an interaction occurs between a pair of proteins or not. Formally, this is an edge prediction task with GCN, i.e to predict wether an edge exists between a pair of nodes in the graph or not.<br>
 
-Since GCNs mainly work with embeddings of nodes, I have chosen to form embeddings by processing the descriptions of the proteins that are part of the physical network of this organism in the Strings database(mention about the strings database and the file names). With the help of the sentence transformer model (mention the model name here), I took the protein descriptions and generated their respective embeddings.<br>
+Since GCNs mainly work with embeddings of nodes, I have chosen to form embeddings by processing the descriptions of the proteins that are part of the physical network of this organism in the STRINGS database. With the help of the sentence transformer model (all-mpnet-base-v2), I took the protein descriptions and generated their respective embeddings.<br>
 
 Note : These embeddings are to be frozen throughout the training process, otherwise the GCN can carve shortcuts to minimize the loss function by modifying the embeddings to its convenience. we may fall into an overfitting trap if that happens.<br>
 
