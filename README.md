@@ -1,10 +1,10 @@
 # PPI-prediction-in-saccharomyces-cerevisiae
  Analysis of protein interactions. Figuring out important proteins according to the graph structure.  Link prediction with graph convolutional networks.
 
-### <ins>Intro:</ins> <br>
+### 👉<ins>Intro:</ins> <br>
 This is project is about predicting physical protein interactions of the baker's yeast organism(saccharomyces cerevisiae). (I hardly know anything about biology but, decided to make a dent in this)
 
-### <ins>EDA:</ins> <br>
+### 🌊<ins>EDA:</ins> <br>
 The EDA was done on interactions with confidence score >= 700. For 3 key reasons:<br>
 1) The interactions with low confidence scores (<= 300) can be assumed to not occur in the organism(in this case, saccharomyces-cerevisiae).
 2) The interactions with confidence scores( around 500) do not hit the threshold to fully confirm they occur in the organism or not.
@@ -55,7 +55,7 @@ $\text{And,   } \tilde{D}^{-1/2} \tilde{A} \tilde{D}^{-1/2} \text{   is the norm
 $\text{And,   } \tilde{A} \text{is the adjacency matrix A with self-loops included}$<br>
 $\text{And,   } \tilde{D} \text{is the degree matrix. Only the diagonal entries contain the degrees of the nodes.}$<br><br>
 
-### <ins>Idea:</ins> <br>
+### 💡<ins>Idea:</ins> <br>
 
 With GCN, our main task is to predict wether an interaction occurs between a pair of proteins or not. Formally, this is an edge prediction task with GCN, i.e to predict wether an edge exists between a pair of nodes in the graph or not.<br>
 
@@ -63,7 +63,12 @@ Since GCNs mainly work with embeddings of nodes, I have chosen to form embedding
 
 Note : These embeddings are to be frozen throughout the training process, otherwise the GCN can carve shortcuts to minimize the loss function by modifying the embeddings to its convenience. we may fall into an overfitting trap if that happens.<br>
 
-### <ins>Results:</ins> <br>
+### 📊<ins>Results:</ins> <br>
+
+| Set | AUC | AP |
+|:------------:|:------------:|:------------:|
+| Validation | 0.9777 | 0.9801 |
+| Test | 0.9818 | 0.9836 |
 
 Validation AUC: 0.9777, AP: 0.9801<br>
 Test AUC: 0.9818, AP: 0.9836
