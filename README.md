@@ -38,7 +38,7 @@ Some of the other proteins that got a high pagerank score are ***YNL030W, YBR009
 4) **YBL003C**: This gene encodes a protein that is part of the Origin Recognition Complex (ORC), which is essential for the initiation of DNA replication.
 5) **YNL031C**: This gene encodes a protein involved in the maintenance of telomeres and chromosomal stability.
 
-### <ins>Graph Convolutional Network:</ins> <br>
+### 🛠️<ins>Graph Convolutional Network:</ins> <br>
 
 GCNs are very similar to dense neural networks. Each layer has an input set of vectors and a weight matrix to transform them. <br>
 The additional aspect is the accumulation of neighbouring feature vectors of a node and combining them with its own feature vector. This is formally known as 'message passing'. Happens in two steps:<br>
@@ -70,8 +70,6 @@ Note : These embeddings are to be frozen throughout the training process, otherw
 | Validation | 0.9777 | 0.9801 |
 | Test | 0.9818 | 0.9836 |
 
-Validation AUC: 0.9777, AP: 0.9801<br>
-Test AUC: 0.9818, AP: 0.9836
 
 
 
